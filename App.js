@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
+import QRCode from 'react-native-qrcode-svg';
 
 export default function App() {
   return (
@@ -23,7 +24,9 @@ export default function App() {
         </Text>
         </View>
       <View style={styles.bottomContainer}>
-        <Text>Qr</Text>
+      <QRCode
+        value="https://github.com/kuvii"
+      />
         </View>
     </View>
   );
@@ -55,8 +58,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 4,
-    borderColor: 'blue',
     width: '100%'
   },
   image: {
