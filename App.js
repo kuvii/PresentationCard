@@ -1,11 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.topContainer}>
-        <Text>imagen</Text>
-        <Text>Text</Text>
+        <Image 
+        style={styles.image}
+        source= {require('./src/images/fotoPerfil.jpg')}
+        >
+    </Image>
+        <Text style={styles.profileText}>
+          Aday Enrique Vera Ayala
+        </Text>
         </View>
       <View style={styles.centerContainer}>
         <Text>Presentation</Text>
@@ -13,7 +19,6 @@ export default function App() {
       <View style={styles.bottomContainer}>
         <Text>Qr</Text>
         </View>
-
     </View>
   );
 }
@@ -30,8 +35,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    borderWidth: 4,
-    borderColor: 'yellow',
+    backgroundColor: 'grey',
     width:'100%'
   },
   centerContainer: {
@@ -49,5 +53,18 @@ const styles = StyleSheet.create({
     borderWidth: 4,
     borderColor: 'blue',
     width: '100%'
+  },
+  image: {
+    width:100,
+    height:100,
+    borderRadius: 50,
+    borderColor: 'black',
+    borderWidth: 1,
+
+  },
+  profileText: {
+    color: 'white',
+    fontSize: 18,
+    fontFamily: 'Roboto'
   }
 });
