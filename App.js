@@ -17,10 +17,11 @@ export default function App() {
       <View style={styles.centerContainer}>
         <Text>
           Hola Mundo!
-          Mi nombre es Aday Enrique Vera Ayala,
-          Actualmente estoy estudiando el Ciclo Superior de Desarrollo de Aplicaciones Multiplataforma 
+          Mi nombre es Aday Enrique Vera Ayala.
+          Actualmente estoy estudiando el segundo año del
+          Ciclo Superior de Desarrollo de Aplicaciones Multiplataforma 
           en el instituto Salesianos La Cuesta.
-          Me encanta la informatica, los videojuegos, el anime y sobretodo, entender como funciona todo en la vida
+          Me encanta la informática, los videojuegos, el anime y sobretodo, entender como funciona todo en la vida.
         </Text>
         </View>
       <View style={styles.bottomContainer}>
@@ -51,8 +52,7 @@ const styles = StyleSheet.create({
     flex: 2,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 5,
-    width: '100%'
+    width: '95%'
   },
   bottomContainer: {
     flex: 1,
